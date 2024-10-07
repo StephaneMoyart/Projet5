@@ -1,0 +1,20 @@
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 209px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+    .footerContent {
+        padding-top: 66px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 34px;
+    }
+}
