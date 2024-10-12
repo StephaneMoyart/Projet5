@@ -1,0 +1,50 @@
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 140px;
+    text-align: center;
+    
+    @media (max-width: 768px) {
+        row-gap: 110px;
+    }
+
+    h1 {
+        padding-top: 45px;
+        font-size: 288px;
+        color: $main;
+
+        @media (max-width:1024px) {
+            font-size: 192px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 96px;
+            padding-top: 80px;
+        }
+        
+        
+    }
+
+    h1 + p {
+        font-size: 36px;
+        font-weight: 500;
+        color: $main;
+
+        @media (max-width: 768px) {
+            font-size: 18px;     
+        }
+    }
+
+    .toRedirect {
+        color: black;
+        font-weight: 500;
+        margin-bottom: 90px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;     
+        }
+    }
+}
+
+
+

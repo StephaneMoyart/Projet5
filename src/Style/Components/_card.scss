@@ -1,0 +1,115 @@
+.card {
+    .presentation {
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;     
+        }
+
+        .presentationLeft {
+            font-weight: 500;
+
+            p {
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+
+            h1 {
+                font-size: 36px;
+                line-height: 50px;
+                font-weight: 500;
+                color: $main;
+
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+
+            .tags {
+                display: flex;
+                column-gap: 10px;
+                padding-top: 20px;
+
+                .tag {
+                    align-content: center;
+                    text-align: center;
+                    color: white;
+                    background-color: $main;
+                    padding: 0 10px;
+                    height: 25px;
+                    min-width: 115px;
+                    font-size: 14px;
+                    border-radius: 10px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .presentationRight {
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+            .owner {
+                display: flex;
+                column-gap: 10px;
+                height: 64px;
+
+                @media (max-width: 768px) {
+                    height: 32px;
+                }
+
+                p {
+                    max-width: 90px;
+                    text-align: right;
+                    align-content: center;
+                    color: $main;
+                }
+
+                img {
+                    border-radius: 150px;
+                }
+            }
+
+            .stars {
+                display: flex;
+                justify-content: right;
+                column-gap: 10px;
+                padding-top: 20px;
+
+                @media (max-width: 768px) {
+                    column-gap: 5px;
+                }
+
+                img {
+                    @media (max-width: 768px) {
+                        height: 13px;
+                        width: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .presentationBottom {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column; 
+            row-gap: 20px;    
+        }
+
+        & .collapse {
+            width: 47%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,9 +1,6 @@
 footer {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
     height: 209px;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     color: white;
     text-align: center;
@@ -13,8 +10,13 @@ footer {
     }
 
     h3 {
-        font-size: 1.5rem;
+        padding-top: 35px;
+        font-size: 24px;
         font-weight: 500;
-        line-height: 34px;
+
+        @media (max-width: 768px) {
+            padding-top: 15px;
+            font-size: 12px;
+        }
     }
 }

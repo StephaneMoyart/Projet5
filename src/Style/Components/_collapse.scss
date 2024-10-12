@@ -1,0 +1,72 @@
+.collapse {
+    max-width: 1020px;
+    
+    .collapseTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $main;
+        color: white;
+        padding: 10px 20px 10px 15px;
+        border-radius: 5px;
+
+        @media (max-width: 768px) {
+            padding: 10px
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: left;
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+        }
+
+        .arrow {
+            transition: 0.5s ease-in-out;
+
+            img {
+                height: 14px;
+                width: 24px;
+
+                @media (max-width: 768px) {
+                    height: 9px;
+                    width: 16px;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .openArrow {
+            transform: rotate(-180deg);   
+        }
+    }
+
+    .content {
+        padding: 0 20px;
+        border-radius: 0 0 5px 5px;
+        transition: 0.5s ease-in-out;
+        transform-origin: top;
+        transform: scaleY(0);
+        max-height: 0;
+
+        @media (max-width: 768px) {
+            padding: 0 10px;
+        }
+
+        &.open {
+            transform: scaleY(1);
+            max-height: 300px;
+            padding: 20px;
+            background-color: $bgdCardCtn;
+
+            @media (max-width: 768px) {
+                padding: 10px;
+            }
+        }
+    }
+}

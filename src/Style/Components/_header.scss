@@ -1,18 +1,42 @@
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 68px;
-    padding: 45px 0;
+    width: 100%;
+    max-width: 1440px;
+    padding: 45px 100px 0 100px;
+
+    @media (max-width: 768px) {
+        padding: 20px 20px 0 20px;
+
+        .logo {
+            height: 47px;
+            width: 145px;
+        }
+    }
     
     nav {
         display: flex;
         gap: 57px;
 
+        @media (max-width: 768px) {
+        gap: 25px;
+        }
+
         .navElem {
-            font-size: 1.5rem;
+            font-size: 24px;
             color: black;
             text-decoration: none;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+
+        .active {
+            text-decoration: underline;
+            cursor: default;
         }
     }
 }
