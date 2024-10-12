@@ -28,6 +28,10 @@ $ffMain: "Montserrat", sans-serif;
     align-items: center;
     min-height: 100vh;
 
+    @media (max-width: 1024px) {
+        row-gap: 35px;   
+    }
+
     @media (max-width: 768px) {
         row-gap: 25px;   
     }
@@ -37,6 +41,10 @@ $ffMain: "Montserrat", sans-serif;
         max-width: 1440px;
         width: 100%;
         padding: 0 100px;
+
+        @media (max-width: 1024px) {
+            padding: 0 50px;
+        }
 
         @media (max-width: 768px) {
             padding: 0 20px;

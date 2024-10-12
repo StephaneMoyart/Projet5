@@ -6,10 +6,21 @@
     max-width: 1440px;
     padding: 45px 100px 0 100px;
 
+    @media (max-width: 1024px) {
+        padding: 35px 50px 0 50px;   
+    }
+
     @media (max-width: 768px) {
         padding: 20px 20px 0 20px;
+    }
 
-        .logo {
+    .logo {
+        @media (max-width: 1024px) {
+            height: 57px;
+            width: 177px;
+        }
+
+        @media (max-width: 768px) {
             height: 47px;
             width: 145px;
         }
@@ -28,9 +39,13 @@
             color: black;
             text-decoration: none;
 
+            @media (max-width: 1024px) {
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+
             @media (max-width: 768px) {
                 font-size: 12px;
-                text-transform: uppercase;
             }
         }
 

@@ -1,6 +1,9 @@
 .aboutMain {
     margin: -12px 0;
 
+    @media (max-width: 1024px) {
+        margin: -8px 0;   
+    }
     @media (max-width: 768px) {
         margin: -5px 0;   
     }
@@ -10,6 +13,10 @@
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
+
+        @media (max-width: 1024px) {
+            row-gap: 25px;
+        }
 
         @media (max-width: 768px) {
             row-gap: 20px;
