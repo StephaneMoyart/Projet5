@@ -30,7 +30,7 @@ const Card = ({ location }) => {
                 <Collapse title={"Equipements"}><ul>{location.equipments.map(eq=> <li key={Math.random().toString(36).slice(2, 22)}>{eq}</li>)}</ul></Collapse>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Card;
+export default Card

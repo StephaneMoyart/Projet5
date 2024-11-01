@@ -1,7 +1,7 @@
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import Banner  from "../Components/Banner";
-import CardsDisplayer from "../Components/CardsDisplayer";
+import Header from "../Components/Header"
+import Footer from "../Components/Footer"
+import Banner  from "../Components/Banner"
+import CardsDisplayer from "../Components/CardsDisplayer"
 
 const Home = () => {
     return (
@@ -16,4 +16,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Home

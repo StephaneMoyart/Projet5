@@ -11,7 +11,7 @@ const Location = () => {
     const navigate = useNavigate()
 
     const getLocationData = () => {
-        axios.get(`http://localhost:3004/locations/${id}`)
+        axios.get(`http://localhost:3000/locations/${id}`)
         .then(r => {
             if (r.data) setData(r.data)
             else navigate('/error')

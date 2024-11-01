@@ -1,12 +1,12 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import axios from "axios"
+import { useEffect, useState } from "react"
+import { NavLink } from "react-router-dom"
 
 const CardsDisplayer = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:3004/locations")
+        axios.get("http://localhost:3000/locations")
         .then(r => setData(r.data))
     }, [])
     
@@ -19,7 +19,7 @@ const CardsDisplayer = () => {
                 </NavLink>
             )}
         </div>
-    );
-};
+    )
+}
 
-export default CardsDisplayer;
+export default CardsDisplayer

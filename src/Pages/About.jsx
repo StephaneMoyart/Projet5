@@ -1,16 +1,16 @@
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import Banner from "../Components/Banner";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import Collapse from "../Components/Collapse";
+import Header from "../Components/Header"
+import Footer from "../Components/Footer"
+import Banner from "../Components/Banner"
+import { useEffect, useState } from "react"
+import axios from "axios"
+import Collapse from "../Components/Collapse"
 
 const About = () => {
 
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:3004/infos")
+        axios.get("http://localhost:3000/infos")
         .then(r => setData(r.data))
     }, [])
 
@@ -25,7 +25,7 @@ const About = () => {
             </main>
             <Footer/>
         </>
-    );
-};
+    )
+}
 
-export default About;
+export default About

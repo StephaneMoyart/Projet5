@@ -1,6 +1,11 @@
 .collapse {
     max-width: 1020px;
     
+    .backgroundFix {
+        background-color: $bgdCardCtn;
+        border-radius: 5px 5px 0 0;
+    }
+
     .collapseTitle {
         display: flex;
         justify-content: space-between;
