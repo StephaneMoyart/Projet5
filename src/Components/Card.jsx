@@ -1,6 +1,6 @@
-import Collapse from "./Collapse";
-import Rating from "./Rating";
-import Slideshow from "./Slideshow";
+import Collapse from "./Collapse"
+import Rating from "./Rating"
+import Slideshow from "./Slideshow"
 
 const Card = ({ location }) => {
     
