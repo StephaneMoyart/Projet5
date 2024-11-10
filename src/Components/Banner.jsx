@@ -1,7 +1,7 @@
-const Banner = ({img, alt, title, style}) => {
+const Banner = ({ img, alt, title, className }) => {
     return (
         <div className="banner">
-            <img src={img} alt={alt} style={style}/>
+            <img src={img} alt={alt} className={className}/>
             <h1>{title}</h1>
         </div>
     )
