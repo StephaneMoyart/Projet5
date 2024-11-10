@@ -16,7 +16,7 @@ const Collapse = ({ title, children }) => {
             </div>
             <div className={isDisplayed ? "content open" : "content"}>{children}</div>      
         </div>
-    );
-};
+    )
+}
 
-export default Collapse;
+export default Collapse

@@ -10,7 +10,7 @@ const Slideshow = ({ imgs }) => {
         <div className="slideshow">
             <div className="imgContainer">
                 <img src={imgs[currentImg]}/>
-                { imgs.length !== 1 &&
+                { imgs.length > 1 &&
                     <>
                         <span onClick={prevImg} className="prevArrow"><img src="../src/assets/arrow.svg" alt="arrow" /></span>    
                         <span onClick={nextImg} className="nextArrow"><img src="../src/assets/arrow.svg" alt="arrow" /></span>

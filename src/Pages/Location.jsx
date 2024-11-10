@@ -7,31 +7,27 @@ import Card from "../Components/Card";
 
 const Location = () => {
     const { id } = useParams()
-    const [data, setData] = useState(null)
+    const [location, setLocation] = useState(null)
     const navigate = useNavigate()
 
-    const getLocationData = () => {
-        axios.get(`http://localhost:3000/locations/${id}`)
-        .then(r => {
-            if (r.data) setData(r.data)
-            else navigate('/error')
-        })
-        .catch(() => navigate('/error'))
+    const getLocationData = async () => {
+        try {
+            const response = await axios.get(`http://localhost:3000/locations/${id}`)
+            setLocation(response.data)
+        } catch { navigate('/error') }
     }
 
-    useEffect(() => {
-        getLocationData()
-    }, [])
+    useEffect(() => { getLocationData() },[])
     
     return (
         <>
             <Header/>
             <main>
-                {data ? <Card location={data}/> : "chargement..."}
+                {location ? <Card location={location}/> : "chargement..."}
             </main>
             <Footer/>
         </>
-    );
-};
+    )
+}
 
-export default Location;
+export default Location
